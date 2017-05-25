@@ -1,12 +1,13 @@
 <?php
 
 class logtransacciones {
+
     var $idregistro;
     var $idacceso;
     var $tabla;
     var $accion;
     var $descripcion;
-    
+
     //Verifica la existencia de un registro
     function VerificaLog() {
         $oConn = new conexion();
@@ -26,4 +27,5 @@ class logtransacciones {
             return false;
         }
     }
+
 }

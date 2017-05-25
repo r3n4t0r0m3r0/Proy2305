@@ -1,4 +1,5 @@
 <?php
+
 include '../lib/conexion.php';
 $conn = new conexion;
 if ($conn->conectar()) {
