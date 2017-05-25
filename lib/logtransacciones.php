@@ -9,7 +9,7 @@ class logtransacciones {
     var $descripcion;
 
     //Verifica la existencia de un registro
-    function VerificaLog() {
+    public function VerificaLog() {
         $oConn = new conexion();
         if ($oConn->conectar()) {
             $db = $oConn->objconn;

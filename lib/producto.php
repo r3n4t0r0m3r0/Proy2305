@@ -8,7 +8,7 @@ class producto {
     var $anio;
 
     //Verifica la existencia de un producto
-    function VerificaProducto() {
+    public function VerificaProducto() {
         $oConn = new conexion();
         if ($oConn->conectar()) {
             $db = $oConn->objconn;

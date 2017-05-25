@@ -7,7 +7,7 @@ class usuario {
     var $clave;
 
     //Valida la existencia del usuario
-    function VerificaUsuario() {
+    public function VerificaUsuario() {
         $oConn = new conexion();
         if ($oConn->conectar()) {
             $db = $oConn->objconn;
@@ -26,7 +26,7 @@ class usuario {
         }
     }
 
-    function VerificaUsuarioClave() {
+    public function VerificaUsuarioClave() {
         $oConn = new conexion();
         if ($oConn->conectar()) {
             $db = $oConn->objconn;
